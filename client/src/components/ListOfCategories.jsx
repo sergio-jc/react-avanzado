@@ -16,7 +16,7 @@ export const ListOfCategories = () => {
     useEffect(()=>{
       const onScroll = (e) => {
         const newShowFixed = window.scrollY > 200 
-        showFixed !== newShowFixed && setShowFixed (newShowFixed)
+        showFixed !== newShowFixed && setShowFixed (!showFixed)
       }
       
       document.addEventListener("scroll",onScroll)
