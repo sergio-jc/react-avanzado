@@ -1,4 +1,4 @@
-import { PhotoCard } from "../PhotoCard"
+import { PhotoCard } from "./PhotoCard"
 
 export const ListOfPhotoCards = () => {
   return (

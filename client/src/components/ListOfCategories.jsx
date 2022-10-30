@@ -1,5 +1,5 @@
-import { Category } from "../Category"
-import { categories } from "../../../../api/db.json"
+import { Category } from "./Category"
+import { categories } from "../../../api/db.json"
 
 export const ListOfCategories = () => {
   return (
