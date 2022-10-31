@@ -1,6 +1,6 @@
 import { Category } from "./Category";
 import { useState, useEffect } from "react";
-import { UseCategoriesData } from "../Hooks/UseCategoriesDate";
+import { UseCategoriesData } from "../hooks/useCategoriesData";
 
 export const ListOfCategories = () => {
     const { categories , loading } = UseCategoriesData()
@@ -25,7 +25,7 @@ export const ListOfCategories = () => {
             <li className="px-2"> <Category/></li>
             :   categories.map((category) => (
                 <li key={category.id} className="px-2">
-                    <Category {...category} />
+                    <Category {...category} path={`/pet/${category.id}`}/>
                 </li>
             ))}
         </ul>
